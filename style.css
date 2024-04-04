@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #222f3e;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.anlong-clock{
+    height: 500px;
+    width: 500px;
+    background-color: #1e3799;
+    border-radius: 50%;
+    border: 10px ridge #f7f1e3;
+    position: relative;
+}
+
+.anlong-clock::before{
+    content: 'Raju';
+    
+    position: absolute;
+   
+    color: #f7f1e3;
+    font-family: 'Sedgwick Ave Display', cursive;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.anlong-clock::before{
+    content: 'Lost time is never found again.';
+    position: absolute;
+   
+    color: #f7f1e3;
+    font-family: 'Sedgwick Ave Display', cursive;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.anlong-clock::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f7f1e3;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #f7f1e3;
+    font-weight:bolder;
+    text-align: center;
+    font-size: 25px;
+}
+
+.number-1{
+    transform: rotate(30deg);
+}
+.number-2{
+    transform: rotate(60deg);
+}
+.number-3{
+    transform: rotate(90deg);
+}
+.number-4{
+    transform: rotate(120deg);
+}
+.number-5{
+    transform: rotate(150deg);
+}
+.number-6{
+    transform: rotate(180deg);
+}
+.number-7{
+    transform: rotate(210deg);
+}
+.number-8{
+    transform: rotate(240deg);
+}
+.number-9{
+    transform: rotate(270deg);
+}
+.number-10{
+    transform: rotate(300deg);
+}
+.number-11{
+    transform: rotate(330deg);
+}
+
+.needle{
+    --rotation:0;
+    width: 10px;
+    height: 40%;
+    background-color: black;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+    border-top-right-radius: 60%;
+    border-top-left-radius: 60%;
+}
+
+.sec{
+    width: 3px;
+    height: 40%;
+    background-color: black;
+    
+}
+
+.hrs{
+    width: 10px;
+    height: 25%;
+    background-color: black;
+   
+}
+
+.min{
+    width: 10px;
+    height: 40%;
+    background-color: black;
+    
+}
+
